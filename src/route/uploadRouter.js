@@ -1,9 +1,9 @@
 // routes/uploadRoutes.js
 const express = require('express');
-import uploadFile from '../controllers/Upload/upload.controller';
+const { uploadFile } = require('../controllers/Upload/upload.controller');
 const router = express.Router();
 
 // Tạo route upload
-router.post('/upload', uploadFile.uploadFile);
+router.post('/upload', uploadFile);
 
 module.exports = router;
